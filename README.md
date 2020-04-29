@@ -1,1 +1,7 @@
-# Project_Bayesian_linear_regression_model
+# Project_BLRM (Bayesian linear regression model)
+
+
+
+
+
+
