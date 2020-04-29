@@ -1,6 +1,6 @@
 # Bayesian Linear Regression Model (BLRM)
 
-We compared four allometric models (Barros et al. 1973, Antunes et al. 2008, Schmidt et al. 2014) and an allometric model from a simple linear regression with Bayesian statistics adjustment based on Markov chain Monte Carlo (MCMC) to estimate the leaf area of arabica coffee ‘Catuaí Vermelho’ (n = 563). Multiplication of the maximum values between length and width (LW) and leaf area (LA) values for each leaf, were measured. This _R_ project details the Bayesian linear regression model (BLRM). The relationship between LA and LW of both cultivars were adjusted by a Bayesian linear regression model (_LA = β0 + β1 LW_) based on Markov chain Monte Carlo (MCMC) with the help of the R “brms” package. The following parameters (prior) were used after a frequentist linear regression adjustment: Gaussian prior for the intercept and slope, _β0∼N(0.9,4)_ and _β1∼N(0.7,4)_, respectively; and half-Cauchy prior for the variance _σ∼Cauchy(0.4)_ (Polson and Scott 2012). The initial reference values before running the model were: interactions = 10000, warm-up = 5000 (_i.e._, first 5000 interactions are discarded), and chains = 4 (more details see Bürkner, 2017, 2018).
+We compared four allometric models (Barros et al. 1973, Antunes et al. 2008, Schmidt et al. 2014) and an allometric model from a simple linear regression with Bayesian statistics adjustment based on Markov chain Monte Carlo (MCMC) to estimate the leaf area of arabica coffee ‘Catuaí Vermelho’ (_n_ = 563). Multiplication of the maximum values between length and width (LW) and leaf area (LA) values for each leaf, were measured. This _R_ project details the Bayesian linear regression model (BLRM). The relationship between LA and LW of both cultivars were adjusted by a Bayesian linear regression model (_LA = β0 + β1 LW_) based on Markov chain Monte Carlo (MCMC) with the help of the _R_ “brms” package. The following parameters (prior) were used after a frequentist linear regression adjustment: Gaussian prior for the intercept and slope, _β0∼N(0.9,4)_ and _β1∼N(0.7,4)_, respectively; and half-Cauchy prior for the variance _σ∼Cauchy(0.4)_ (Polson and Scott 2012). The initial reference values before running the model were: interactions = 10000, warm-up = 5000 (_i.e._, first 5000 interactions are discarded), and chains = 4 (more details see Bürkner, 2017, 2018).
 
 ## Getting Started
 
@@ -94,9 +94,9 @@ plot(conditional_effects(data.brms), points = TRUE)
 
 ## Authors
 
-* **Junior Pastor Pérez-Molina** - [ORCID](https://orcid.org/0000-0002-3396-0599) - [GitHub](https://github.com/JPASTORPM)
-* **Marcelo Schramm Mielke** - [ORCID](https://orcid.org/)
-* **Gabriel Oliveira Santos** - [ORCID](https://orcid.org/)
+* **Marcelo Schramm Mielke** - [ORCID](https://orcid.org/0000-0001-6930-2902)
+* **Gabriel Oliveira Santos** - [ORCID](https://orcid.org/0000-0001-9980-4401)
 * **Emile Caroline Silva Lopes** - [ORCID](https://orcid.org/0000-0001-6910-894X)
 * **Ana Cristina Schilling** - [ORCID](https://orcid.org/0000-0002-9419-9051)
 * **Martielly Santana dos Santos** - [ORCID](https://orcid.org/0000-0002-0909-2664)
+* **Junior Pastor Pérez-Molina** - [ORCID](https://orcid.org/0000-0002-3396-0599) - [GitHub](https://github.com/JPASTORPM)
