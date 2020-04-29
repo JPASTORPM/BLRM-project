@@ -69,13 +69,16 @@ posterior_interval(as.matrix(data.brms), prob = 0.95)
 resid = resid(data.brms)[, "Estimate"]
 fit = fitted(data.brms)[, "Estimate"]
 ggplot() + geom_point(data = NULL, aes(y = resid, x = fit))
+
 resid = resid(data.brms)[, "Estimate"]
 fit = fitted(data.brms)[, "Estimate"]
 ggplot() + geom_point(data = NULL, aes(y = resid, x = LW))
+
 resid = resid(data.brms)[, "Estimate"]
 sresid = resid/sd(resid)
 fit = fitted(data.brms)[, "Estimate"]
 ggplot() + geom_point(data = NULL, aes(y = sresid, x = fit))
+
 plot(conditional_effects(data.brms), points = TRUE)
 ```
 
@@ -85,18 +88,18 @@ plot(conditional_effects(data.brms), points = TRUE)
 
 ## Reference
 
-* Antunes WC, Pompelli MF, Carretero DM, DaMatta FM (2008) Allometric models for non-destructive leaf area estimation in coffee (Coffea arabica and Coffea canephora). Annals of Applied Biology, 153:33-40.
-* Barros RS, Maestri M, Vieira M, Braga-Filho LJ (1973) Determinação de área de folhas do café (Coffea arabica L. cv. ‘Bourbon Amarelo’). Revista Ceres, 20:44-52.
-* Bürkner P (2017) brms: An R Package for Bayesian Multilevel Models Using Stan. Journal of Statistical Software, 80(1):1-28.
-* Bürkner P (2018) Advanced Bayesian Multilevel Modeling with the R Package brms. The R Journal, 10(1):395-411.
-* Polson NG & Scott JG (2012) On the half-Cauchy prior for a global scale parameter. Bayesian Analysis, 7(4):887-902.
-* Schmidt ER, Amaral JAT, Schmidt O, Santos JS (2014) Análise comparativa de equações para estimativa da área foliar em cafeeiros. Coffee Science, 9:155-167.
+* Antunes WC, Pompelli MF, Carretero DM, DaMatta FM (**2008**) Allometric models for non-destructive leaf area estimation in coffee (Coffea arabica and Coffea canephora). _Annals of Applied Biology_, 153:33-40.
+* Barros RS, Maestri M, Vieira M, Braga-Filho LJ (**1973**) Determinação de área de folhas do café (Coffea arabica L. cv. ‘Bourbon Amarelo’). _Revista Ceres_, 20:44-52.
+* Bürkner P (**2017**) brms: An R Package for Bayesian Multilevel Models Using Stan. _Journal of Statistical Software_, 80(1):1-28.
+* Bürkner P (**2018**) Advanced Bayesian Multilevel Modeling with the R Package brms. _The R Journal_, 10(1):395-411.
+* Polson NG & Scott JG (**2012**) On the half-Cauchy prior for a global scale parameter. _Bayesian Analysis_, 7(4):887-902.
+* Schmidt ER, Amaral JAT, Schmidt O, Santos JS (**2014**) Análise comparativa de equações para estimativa da área foliar em cafeeiros. _Coffee Science_, 9:155-167.
 
 ## Authors
 
 * **Junior Pastor Pérez-Molina** - [ORCID](https://orcid.org/0000-0002-3396-0599) - [GitHub](https://github.com/JPASTORPM)
-* **Marcelo Schramm Mielke**
-* **Gabriel Oliveira Santos**
-* **Emile Caroline Silva Lopes**
-* **Ana Cristina Schilling**
-* **Martielly Santana dos Santos**
+* **Marcelo Schramm Mielke** - [ORCID](https://orcid.org/)
+* **Gabriel Oliveira Santos** - [ORCID](https://orcid.org/)
+* **Emile Caroline Silva Lopes** - [ORCID](https://orcid.org/)
+* **Ana Cristina Schilling** - [ORCID](https://orcid.org/)
+* **Martielly Santana dos Santos** - [ORCID](https://orcid.org/)
